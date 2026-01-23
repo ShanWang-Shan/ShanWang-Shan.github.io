@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Shan Wang</name>
               </p>
-              <p>I am a Computer Vision PhD student at <a href="https://www.anu.edu.au">Australian National University (ANU)</a>, under the guidance of Dr. <a href="https://people.csiro.au/N/C/Chuong-Nguyen">Chuong Nguyen</a> and Prof. <a href="http://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>. My research focuses on Autonomous Driving and 3D reconstruction. Prior to joining ANU,  I accumulated 16 years of experience as an embedded software engineer in the automobile industry.
+              <p>I am a Computer Vision PhD student at <a href="https://www.anu.edu.au">Australian National University (ANU)</a>, under the guidance of Dr. <a href="https://people.csiro.au/N/C/Chuong-Nguyen">Chuong Nguyen</a> and Prof. <a href="http://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>. My research focuses on Generative AI, Multimodal Learning, 3D Understanding, and autonomous perception. I bring a unique hybrid background: prior to my PhD, I spent 16 years as an Embedded Software Engineer in the automotive industry, architecting real-time multimedia and navigation systems for global OEMs (Toyota/Honda). Most recently, I interned at Amazon, where I developed diffusion models for Joint Shadow Generation and Relighting, and at NVIDIA, where I researched Hallucination Mitigation for MLLMs.
               </p>
               <p style="text-align:center">
                 <a href="mailto:shan.wang@anu.edu.au">Email</a> &nbsp/&nbsp
@@ -61,6 +61,46 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+	<tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="data/GACD.png" alt="PontTuset" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/pdf/2509.03113">
+                <papertitle>Mitigating Multimodal Hallucinations via Gradient-based Self-Reflection</papertitle>
+              </a>
+              <br>
+              <strong>Shan Wang</strong>, Maying Shen, Nadine Chang, Chuong Nguyen, Hongdong Li and Jose M Alvarez
+              <br>
+              Arxiv
+              <br>
+              <a href="https://arxiv.org/pdf/2509.03113"> paper </a>  /
+              <p></p>
+              <p> Multimodal large language models (MLLMs) achieve strong performance across diverse tasks but remain prone to hallucinations, where outputs are not grounded in visual inputs. This issue can be attributed to two main biases: text–visual bias, the overreliance on prompts and prior outputs, and co-occurrence bias, spurious correlations between frequently paired objects. We propose Gradient-based Influence-Aware Constrained Decoding (GACD), an inference-based method, that addresses both biases without auxiliary models, and is readily applicable to existing models without finetuning. The core of our approach is bias estimation, which uses first-order Taylor gradients to understand the contribution of individual tokens—visual features and text tokens—to the current output. Based on this analysis, GACD mitigates hallucinations through two components: (1) suppressing spurious visual features correlated with the output objects, and (2) rebalancing cross-modal contributions by strengthening visual features relative to text. Experiments across multiple benchmarks demonstrate that GACD effectively reduces hallucinations and improves the visual grounding of MLLMs outputs.
+			  </p>
+            </td>
+        </tr>
+			
+	<tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="data/VFA.png" alt="PontTuset" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_View_From_Above_Orthogonal-View_aware_Cross-view_Localization_CVPR_2024_paper.pdf">
+                <papertitle>View from above: Orthogonal-view aware cross-view localization</papertitle>
+              </a>
+              <br>
+              <strong>Shan Wang</strong>, Chuong Nguyen, Jiawei Liu, Yanhao Zhang, Sundaram Muthu, Fahira Afzalmaken, Kaihao Zhang and Hongdong Li
+              <br>
+              CVPR, 2024
+              <br>
+              <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_View_From_Above_Orthogonal-View_aware_Cross-view_Localization_CVPR_2024_paper.pdf"> paper </a>  /
+              <p></p>
+              <p> This paper presents a novel aerial-to-ground feature aggregation strategy, tailored for the task of cross-view image-based geo-localization. Conventional vision-based methods heavily rely on matching ground-view image features with a pre-recorded image database, often through establishing planar homography correspondences via a planar ground assumption. As such, they tend to ignore features that are off-ground and not suited for handling visual occlusions, leading to unreliable localization in challenging scenarios. WeproposeaTop-to-Ground Aggregation (T2GA)module that capitalizes aerial orthographic views to aggregate features down to the ground level, leveraging reliable off-ground information to improve feature alignment. Furthermore, we introduce a Cycle Domain Adaptation (CycDA) loss that ensures feature extraction robustness across domain changes. Additionally, an Equidistant Re-projection (ERP) loss is introduced to equalize the impact of all keypoints on orientation error, leading to a more extended distribution of keypoints, which benefits orientation estimation. On both KITTI and Ford Multi-AV datasets, our method consistently achieves the lowest mean longitudinal and lateral translations across different settings and obtains the smallest orientation error when the initial pose is less accurate, a more challenging setting. Further, it can complete an entire route through continual vehicle pose estimation with initial vehicle pose given only at the starting point.
+			  </p>
+            </td>
+        </tr>
+			
 	<tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="data/PureACL.png" alt="PontTuset" width="160" style="border-style: none">
